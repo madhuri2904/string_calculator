@@ -28,7 +28,12 @@ This project is a solution to the [String Calculator TDD Kata](https://github.co
 - Return the number itself for a single input
 - Return the sum of two or more comma-separated numbers
 - Handle newlines (`\n`) as delimiters
-
+- Custom delimiters (e.g., `//;\n1;2`)
+- Exception handling for negative numbers
+- Numbers bigger than 1000 should be ignored
+- Delimiters can be of any length (e.g., '//[***]\n1***2***3')
+- Allow multiple delimiters (e.g., '//[*][%]\n1*2%3')
+- Handle multiple delimiters with length longer than one char
 ---
 
 ## Screenshots
@@ -49,12 +54,6 @@ This project is a solution to the [String Calculator TDD Kata](https://github.co
 
 ---
 
-## Next Features (Coming Soon)
-
-- Custom delimiters (e.g., `//;\n1;2`)
-- Exception handling for negative numbers
-
----
 
 ## Author
 
