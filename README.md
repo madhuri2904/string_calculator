@@ -31,8 +31,8 @@ This project is a solution to the [String Calculator TDD Kata](https://github.co
 - Custom delimiters (e.g., `//;\n1;2`)
 - Exception handling for negative numbers
 - Numbers bigger than 1000 should be ignored
-- Delimiters can be of any length (e.g., '//[***]\n1***2***3')
-- Allow multiple delimiters (e.g., '//[*][%]\n1*2%3')
+- Delimiters can be of any length (e.g., `//[***]\n1***2***3`)
+- Allow multiple delimiters (e.g., `//[*][%]\n1*2%3`)
 - Handle multiple delimiters with length longer than one char
 ---
 
