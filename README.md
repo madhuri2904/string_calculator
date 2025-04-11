@@ -47,7 +47,6 @@ This project is a solution to the [String Calculator TDD Kata](https://github.co
 7. ![Screenshot 7](screenshots/Screenshot_7.png)
 
 
-
 ---
 
 ## Next Features (Coming Soon)
