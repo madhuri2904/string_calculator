@@ -3,10 +3,19 @@ class StringCalculator
     def self.add(numbers)
         return 0 if numbers.empty?
 
+        delimiters = [",", "\n"]
+
         if numbers.start_with?("//")
-            delimiter, numbers = numbers.split("\n", 2)
-            delimiter = delimiter[2]
-            parts = numbers.split(/#{Regexp.escape(delimiter)}/)
+            if numbers.start_with?("//[")
+                delimiter_section = numbers[/\/\/\[(.+?)\]\n/, 1]
+                delimiter = Regexp.escape(delimiter_section)
+                numbers = numbers.split("\n", 2).last
+                return numbers.split(/#{delimiter}|,|\n/).map(&:to_i).reject { |n| n > 1000 }.sum
+            else
+                delimiter, numbers = numbers.split("\n", 2)
+                delimiter = delimiter[2]
+                parts = numbers.split(/#{Regexp.escape(delimiter)}/)
+            end
         else
             parts = numbers.split(/,|\n/)
         end
