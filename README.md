@@ -8,7 +8,7 @@ This project is a solution to the [String Calculator TDD Kata](https://github.co
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/madhuri2904/stringcalulator.git
+    git clone https://github.com/madhuri2904/string_calulator.git
     cd string_calculator
     ```
 
